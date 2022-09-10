@@ -37,13 +37,13 @@ class BookDetail(StaffRequiredMixin, DetailView):
 class BookCreate(StaffRequiredMixin, CreateView): 
     model = Book
 
-    fields = ["name", "auther", "category"]
+    fields = ["name", "author", "category"]
 
 
 class BookUpdate(StaffRequiredMixin, UpdateView): 
     model = Book
 
-    fields = ["name", "auther", "category"]
+    fields = ["name", "author", "category"]
 
 
 class BookDelete(StaffRequiredMixin, DeleteView): 

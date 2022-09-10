@@ -8,7 +8,7 @@ from django.contrib.auth.base_user import AbstractBaseUser
 
 class Book(models.Model):
     name = models.CharField(max_length=20)
-    auther = models.CharField(max_length=20)
+    author = models.CharField(max_length=20)
     category = models.CharField(max_length=20)
 
     def get_absolute_url(self):

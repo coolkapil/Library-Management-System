@@ -12,7 +12,7 @@
 {% for book in object_list %}
 <tr>
 <td>{{ book.name }}</td>
-<td>{{ book.auther }}</td>
+<td>{{ book.author }}</td>
 <td>{{ book.category }}</td>
 <td>
 <a  href="{% url "book-detail"  book.id  %}">details</a>
