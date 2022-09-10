@@ -1,0 +1,26 @@
+<h1>Books</h1>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Author</th>
+<th>Category</th>
+</tr>
+</thead>
+<tbody>
+{% for book in object_list %}
+<tr>
+<td>{{ book.name }}</td>
+<td>{{ book.auther }}</td>
+<td>{{ book.category }}</td>
+<td>
+<a  href="{% url "book-detail"  book.id  %}">details</a>
+<a  href="{% url "book-update"  book.id  %}">edit</a>
+<a  href="{% url "book-delete"  book.id  %}">delete</a>
+</td>
+</tr>
+
+{% endfor %}
+</tbody>
+</table>
