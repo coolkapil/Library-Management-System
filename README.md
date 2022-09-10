@@ -1,0 +1,1 @@
+A Simple Library management system in which an admin can perform CRUD part and students can only view the list of books
